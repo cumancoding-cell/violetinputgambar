@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+  <title>input media mobile</title>
+  <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            text-align: center;
+          }
+        #media-container {
+          margin-top: 20px;
+          border:1px solid #ccc;
+          padding: 10px;
+          min height: 100px;
+        }
+    .media-preview{
+      maxi-width: 100%;
+      height: auto;
+      margin: 10px 0;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>pilih gambar atau video</h1>
+  <input
+    type="file" 
+        id="file-input" 
+        accept="image/*,video/*" 
+        onchange="handleFiles(this.files)"
+    />
+  <p>`accept="image/*,video/*"` memungkinkan pemilihan file dari galeri atau kamera/camcorder pada perangkat Android.</p>
+  <div id="media-container">
+        <p>Pratinjau media akan muncul di sini.</p>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
+</body>
